@@ -8,15 +8,12 @@
 </head>
 <body>
     <div>
-        <h1>Skal du drikke i dag?</h1>
-        <div class="button-container">
-            <button onclick="navigateTo('ja.html')">Ja</button>
-            <button onclick="navigateTo('nei.html')">Nei</button>
-        </div>
+        <h1>Flink Gutt!</h1>
+        <button onclick="goBack()">Tilbake</button>
     </div>
     <script>
-        function navigateTo(page) {
-            window.location.href = page;
+        function goBack() {
+            window.history.back();
         }
     </script>
 </body>
