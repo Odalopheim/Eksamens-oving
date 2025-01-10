@@ -1,25 +1,47 @@
+/* Generell styling */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #8e44ad, #3498db);
     color: #fff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-.options li {
-    margin: 10px 0; /* Legger til mellomrom mellom listeelementene */
-}
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    justify-content: center;
     text-align: center;
 }
-.button-container {
-    display: flex;
-    gap: 20px;
+
+/* Tilbakeknapp */
+.back-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
 }
+
+.back-button:hover {
+    background-color: #c0392b;
+}
+
+/* Skjema */
+.form-container {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
 button {
     background-color: #2ecc71;
     color: white;
@@ -29,10 +51,47 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: 10px;
 }
-button:nth-child(2) {
-    background-color: #e74c3c;
-}
+
 button:hover {
     opacity: 0.9;
+}
+
+.generate {
+    background-color: #3498db;
+    margin-top: 20px;
+}
+
+/* Generere resultater */
+#results {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Personliste */
+#personList {
+    margin-bottom: 20px;
+}
+
+.person {
+    background-color: #34495e;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.options li {
+    margin: 10px 0; /* Legger til mellomrom mellom listeelementene */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
 }
