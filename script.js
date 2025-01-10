@@ -1,5 +1,62 @@
 let people = [];
 
+// Liste med spørsmålene
+const questions = [
+    "Hvem er mest sannsynlig til å gå på en date med en kjent person?",
+    "Hvem er mest sjenert?",
+    "Hvem er mest sannsynlig til å dra på ferie til et tropisk paradis?",
+    "Hvem er mest kreativ?",
+    "Hvem er mest eventyrlysten?",
+    "Hvem er mest sannsynlig til å bli millionær?",
+    "Hvem er mest tålmodig?",
+    "Hvem er mest sportig?",
+    "Hvem er mest organisert?",
+    "Hvem er mest sannsynlig til å starte en bedrift?",
+    "Hvem er mest sannsynlig til å ende opp i fengsel?",
+    "Hvem er mest sannsynlig til å dra på en fest og drikke altfor mye?",
+    "Hvem er mest sannsynlig til å ha en hemmelig tatovering?",
+    "Hvem er mest sannsynlig til å bli sett på en date med en totalt ukjent person?",
+    "Hvem er mest sannsynlig til å gjøre noe helt sprøtt for penger?",
+    "Hvem er mest sannsynlig til å gjøre noe farlig bare for å få oppmerksomhet?",
+    "Hvem er mest sannsynlig til å sove med noen de bare har møtt?",
+    "Hvem er mest sannsynlig til å bryte ut i tårer på et offentlig sted?",
+    "Hvem er mest sannsynlig til å ha et eventyr med en fremmed på ferie?",
+    "Hvem er mest sannsynlig til å ligge på et intervju for å få drømmejobben?",
+    "Hvem er mest sannsynlig til å bruke en falsk ID for å komme inn på en klubb?",
+    "Hvem er mest sannsynlig til å bruke appen 'Tinder' for å finne en tilfeldig affære?",
+    "Hvem er mest sannsynlig til å gjøre en vill handling etter en natt ute på byen?",
+    "Hvem er mest sannsynlig til å få et rykte som den personen som alltid er ute etter drama?",
+    "Hvem er mest sannsynlig til å ha en affære med en kollega?"
+];
+
+// Variabel for å holde styr på det nåværende spørsmålet
+let currentIndex = 0;
+
+// Funksjon for å oppdatere spørsmålet
+function updateQuestion() {
+    const questionElement = document.getElementById("question");
+    questionElement.textContent = questions[currentIndex];
+}
+
+// Funksjon for å navigere til neste spørsmål
+function nextQuestion() {
+    if (currentIndex < questions.length - 1) {
+        currentIndex++;
+        updateQuestion();
+    }
+}
+
+// Funksjon for å navigere til forrige spørsmål
+function previousQuestion() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateQuestion();
+    }
+}
+
+// Initialisere første spørsmål når siden lastes
+updateQuestion();
+
 // Legg til person i listen
 function addPerson() {
     const nameInput = document.getElementById("nameInput");
@@ -36,7 +93,8 @@ function generateDrinkAmounts() {
     people.forEach(person => {
         const drinkAmount = Math.floor(Math.random() * 101); // Tilfeldig tall mellom 0 og 100
         const resultDiv = document.createElement("div");
-        resultDiv.textContent = `${person}: ${drinkAmount} ml`;
+        resultDiv.textContent = `${person}: ${drinkAmount} dl`;
         resultsDiv.appendChild(resultDiv);
     });
 }
+

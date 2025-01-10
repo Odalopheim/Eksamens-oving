@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hvem er mest?</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Eventuell CSS-fil -->
+</head>
+<body>
+
+    <div class="container">
+        <button class="back-button" onclick="window.history.back()">Tilbake</button>
+        <h4>Kast snusboksen til den deltakeren som spørsmålet passer best til.</h4>
+        <h1>Hvem er mest?</h1>
+        <div id="question-container">
+            <p id="question">Her vil spørsmålene vises...</p>
+        </div>
+
+        <div class="navigation-buttons">
+            <button onclick="previousQuestion()">Forrige</button>
+            <button onclick="nextQuestion()">Neste</button>
+        </div>
+    </div>
+
+    <!-- Koble til JavaScript-filen etter HTML-elementene -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
