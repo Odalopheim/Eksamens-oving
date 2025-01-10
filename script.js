@@ -98,3 +98,7 @@ function generateDrinkAmounts() {
     });
 }
 
+function goBack() {
+    window.history.back();
+}
+

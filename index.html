@@ -13,14 +13,10 @@
         </div>
         <h1>Skal du drikke i dag?</h1>
         <div class="button-container">
-            <button onclick="navigateTo('ja.html')">Ja</button>
-            <button onclick="navigateTo('nei.html')">Nei</button>
+            <button onclick="location.href='ja.html'">Ja</button>
+            <button onclick="location.href='nei.html'">Nei</button>
         </div>
     </div>
-    <script>
-        function navigateTo(page) {
-            window.location.href = page;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
