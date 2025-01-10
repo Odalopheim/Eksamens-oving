@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeg har aldri - Drikkelek</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Valgfritt CSS-fil -->
+</head>
+<body>
+
+    <div class="container">
+        <button class="back-button" onclick="window.history.back()">Tilbake</button>
+        <h4>Drikk hvis du har</h4>
+        <h1>Jeg har aldri</h1>
+        
+        <div id="question-container">
+            <p id="questions_JHA">Spørsmålet vises her...</p> <!-- Endret id her -->
+        </div>
+
+        <div class="navigation-buttons">
+            <button onclick="previousQuestion()">Forrige</button>
+            <button onclick="nextQuestion()">Neste</button>
+        </div>
+    </div>
+
+    <script src="script_test.js"></script> <!-- Koble til JavaScript-filen -->
+
+</body>
+</html>
