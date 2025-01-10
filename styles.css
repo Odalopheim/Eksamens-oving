@@ -1,4 +1,4 @@
-body, ul, li {
+body{
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #8e44ad, #3498db);
     color: #fff;
@@ -92,5 +92,35 @@ h1 {
 
 .button-container {
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Space between buttons */
+    justify-content: center; /* Center align buttons */
+    margin-top: 20px; /* Add some spacing above */
+}
+
+/* Image container styling */
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next line if needed */
+    gap: 20px; /* Spacing between images */
+    justify-content: center; /* Center align images */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2c3e50; /* Dark background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Individual image styling */
+.image-item {
+    width: 100px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on images */
+.image-item:hover {
+    transform: scale(1.1); /* Slight zoom-in effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Emphasized shadow */
 }
