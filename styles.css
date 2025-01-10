@@ -1,4 +1,4 @@
-body {
+body, ul, li {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #8e44ad, #3498db);
     color: #fff;
