@@ -8,6 +8,9 @@ body {
     height: 100vh;
     margin: 0;
 }
+.options li {
+    margin: 10px 0; /* Legger til mellomrom mellom listeelementene */
+}
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
